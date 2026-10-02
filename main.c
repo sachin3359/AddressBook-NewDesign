@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include "contact.h"
+#include "file.h"
 
 int main() {
     int choice;
     AddressBook addressBook;
+    int sortChoice=0;
     initialize(&addressBook); // Initialize the address book
+    loadContactsFromFile(&addressBook);
 
     do {
         printf("\nAddress Book Menu:\n");

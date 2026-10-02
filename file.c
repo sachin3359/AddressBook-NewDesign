@@ -20,6 +20,8 @@ void saveContactsToFile(AddressBook *addressBook)
     printf("successfully contacts saved to 'contacts.csv\n\n");
 }
 
+
+
 void loadContactsFromFile(AddressBook *addressBook) 
 {
     FILE *file = fopen("contacts.csv", "r");
